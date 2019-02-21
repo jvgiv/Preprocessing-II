@@ -168,6 +168,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.parent-top {
+  display: flex;
+  margin: 30px 0;
+  width: 1000px;
+  align-items: baseline;
+}
+.parent-top a {
+  text-align: right;
+  font-size: 20px;
+  padding: 0 40px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -179,8 +190,18 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-header {
+.welcome {
+  margin: 30px 0;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
+  align-items: center;
+  width: 800px;
+}
+.welcome .child-welc {
+  justify-content: center;
 }
 .home .content-section {
   margin: 30px 0;

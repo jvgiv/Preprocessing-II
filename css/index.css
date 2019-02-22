@@ -199,10 +199,15 @@ img {
   text-decoration: none;
   color: #212529;
 }
-@mobile {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
+@media (max-width: 500px) {
+  .parent-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+  }
 }
 .footer {
   width: 100%;
@@ -225,7 +230,7 @@ img {
   align-items: center;
   width: 800px;
 }
-@media (max-width: 500px) {
+@media ( max-width:500px ) {
   .welcome {
     width: 100%;
   }
@@ -252,9 +257,10 @@ img {
   padding-right: 1%;
 }
 @media (max-width: 500px) {
-  .home .content-section {
+  .home .content-section .text-content {
     align-items: center;
     width: 100%;
+    height: 150px;
   }
 }
 .home .content-section .img-content {
